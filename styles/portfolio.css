@@ -197,11 +197,6 @@ footer textarea {
 }
 
 /* responsive media query */
-
-.hide {
-    display: none;
-}
-
 @media screen and (max-width:576px) {
 
     .skills-container,
@@ -217,7 +212,8 @@ footer textarea {
     nav>ul {
         gap: 10px;
     }
-    .btn-primary{
+
+    .btn-primary {
         margin-bottom: 20px;
     }
 
@@ -246,5 +242,19 @@ footer textarea {
     footer input[type="email"],
     footer textarea {
         width: calc(100% - 40px);
+    }
+}
+
+/* tablet specific media query */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .banner,.skills-container {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        width: 100%;
+    }
+    .skills-container{
+        width: 100%;
     }
 }
